@@ -66,6 +66,23 @@ colors = ['blue', 'green','red','purple','cyan','white'
     ,'gold','violet','black','teal','orange']
 print(len(colors))
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Find the index
 print(colors.index("gold"))
 
