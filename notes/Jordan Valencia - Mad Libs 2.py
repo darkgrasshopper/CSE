@@ -1,10 +1,17 @@
 list_words = []
 list_words.append(input("Give me an adjective"))
 list_words.append(input("Give me an noun"))
-li
+list_words.append(input("Give me an adjective"))
+list_words.append(input("Give me an verb"))
+list_words.append(input("Give me an noun"))
+list_words.append(input("Give me an verb"))
+list_words.append(input("Give me an adjective"))
+list_words.append(input("Give me an noun"))
+list_words.append(input("Give me an verb"))
+list_words.append(input("Give me an adjective"))
 
-print("There was once a %s grasshopper, he lived in a %s" % (list_words[0], noun_1))
-print("The grasshopper was %s , he then %s to the store" % (adjective_2, verb_1))
-print("At the %s, he %s for groceries" % (noun_2, verb_2))
-print("He got an %s fruit, and went back to his %s" % (adjective_3, noun_3))
-print(" At home he %s the food, and sat on his %s couch" % (verb_3, adjective_4))
+print("There was once a %s grasshopper, he lived in a %s" % (list_words[0], list_words[1]))
+print("The grasshopper was %s , he then %s to the store" % (list_words[2], list_words[3]))
+print("At the %s, he %s for groceries" % (list_words[4], list_words[5]))
+print("He got an %s fruit, and went back to his %s" % (list_words[6], list_words[7]))
+print(" At home he %s the food, and sat on his %s couch" % (list_words[8], list_words[9]))
