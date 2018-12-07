@@ -22,20 +22,21 @@ challenge3(203, 92)
 
 
 def challenge4(number):
+    print(number)
+    if number < 0:
+        print("The number is a negative number")
+    elif number > 0:
+        print("The number is a positive number")
+    else:
+        print("The number is zero")
+
+challenge4(5)
+
+def challenge5(number):
+    print(3.14*number**2)
 
 
-
- def challenge7(number):
-    print(number+number*number+number**3)
-
-
- challenge7(2)
-
-def pythagorean(a, b):
-    return (a**2 + b**2)**(1/2)
-
-
-print(pythagorean(3, 4))
+challenge5(3)
 
 
 
