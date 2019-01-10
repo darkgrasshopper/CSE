@@ -17,3 +17,6 @@ print(list1)
 
 list1.pop(0)
 print(list1)
+print(len(list1))
+print(list1)
+print(list1[1])
