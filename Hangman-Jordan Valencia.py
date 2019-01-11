@@ -1,4 +1,5 @@
-#wordbank,various sizes, 10 words
-list1 = ["Please","jannet","give","me","back","the","kids","please","please","please"]
-*
+import random
+wordbank = ["Please","jannet","give","me","back","the","kids","please","please","please"]
+random.choice(wordbank)
+
 
