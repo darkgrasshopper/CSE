@@ -2,7 +2,7 @@ import random
 import string
 win = False
 guess_total = 8
-db_info = True;
+db_info = False;
 word_bank = ["Please", "jannet", "give", "me", "back", "the", "kids", "screw", "draw", "driver"]
 chosen_word = random.choice(word_bank)
 list_word = list(chosen_word)
@@ -39,6 +39,7 @@ while guess_total > 0 and win == False:
         win = True
 
 
-
+    if letter .upper() ==   upper()
+        .lower()
 
 
