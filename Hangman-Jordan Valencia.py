@@ -1,10 +1,11 @@
 import random
-import string
 win = False
+lose = False
 guess_total = 8
 db_info = False;
-word_bank = ["Please", "jannet", "give", "me", "back", "the", "kids", "screw", "draw", "driver"]
+word_bank = ["please", "jannet", "give", "me", "back", "the", "kids", "screw", "draw", "driver"]
 chosen_word = random.choice(word_bank)
+chosen_word = chosen_word.lower()
 list_word = list(chosen_word)
 guessed_letters = []
 correct_guesses = []
@@ -16,6 +17,7 @@ while guess_total > 0 and win == False:
     print(correct_guesses)
 
     letter = input("Guess a letter: ")
+    letter = letter.lower()
     guessed_letters.append(letter)
 
     # debug info
@@ -30,6 +32,7 @@ while guess_total > 0 and win == False:
             correct_guesses.pop(i)
             correct_guesses.insert(i, list_word[i])
 
+
     if letter not in list_word:
         guess_total -= 1
 
@@ -38,8 +41,11 @@ while guess_total > 0 and win == False:
 
         win = True
 
+    if guess_total == 0:
+        print("you lost you baboon!")
 
-    if letter .upper() ==   upper()
-        .lower()
+        lose = True
 
-
+    #Capitalization
+    #if letter  .upper() == upper()
+    #.lower()
