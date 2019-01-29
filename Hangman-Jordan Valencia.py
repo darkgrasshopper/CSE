@@ -46,6 +46,7 @@ while guess_total > 0 and win == False:
 
         lose = True
 
+
     #Capitalization
     #if letter  .upper() == upper()
     #.lower()
