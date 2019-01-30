@@ -9,7 +9,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/CSE$dictionary_notes.coverage" NAME="dictionary notes Coverage Results" MODIFIED="1548779429987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
+    <SUITE FILE_PATH="coverage/CSE$dictionary_notes.coverage" NAME="dictionary notes Coverage Results" MODIFIED="1548865094590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$Semester_2_Notes_Jordan_Valencia.coverage" NAME="Semester 2 Notes-Jordan Valencia Coverage Results" MODIFIED="1547136621369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$Hangman_Test.coverage" NAME="Hangman Test Coverage Results" MODIFIED="1547655172198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Hangman_Jordan_Valencia.coverage" NAME="Hangman-Jordan Valencia Coverage Results" MODIFIED="1548692333746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -33,54 +33,63 @@
     <session id="34724304">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.33" value="4" />
           <entry key="project.open.time.34" value="1" />
-          <entry key="project.open.time.36" value="2" />
+          <entry key="project.open.time.36" value="3" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.58" value="1" />
           <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="17" />
+          <entry key="py" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="17" />
+          <entry key="Python" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="41" />
-          <entry key="py" value="4781" />
+          <entry key="py" value="5560" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="41" />
-          <entry key="Python" value="4781" />
+          <entry key="Python" value="5560" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes/dictionary notes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+            <state relative-caret-position="293">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/notes/Dictionary World Map - Jordan Valencia.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -106,6 +115,7 @@
         <option value="$PROJECT_DIR$/Hangman Test.py" />
         <option value="$PROJECT_DIR$/notes/oooOOO.py" />
         <option value="$PROJECT_DIR$/notes/dictionary notes.py" />
+        <option value="$PROJECT_DIR$/notes/Dictionary World Map - Jordan Valencia.py" />
       </list>
     </option>
   </component>
@@ -115,7 +125,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -304,15 +314,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30937973" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3139183" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -404,13 +414,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes/oooOOO.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/notes/oooOOO.py" />
     <entry file="file://$PROJECT_DIR$/notes/Jordan Valencia - Python Challenges.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -427,8 +431,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/notes/dictionary notes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+        <state relative-caret-position="293">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes/Dictionary World Map - Jordan Valencia.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
         </state>
       </provider>
     </entry>

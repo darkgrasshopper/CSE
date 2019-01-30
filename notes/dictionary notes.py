@@ -1,90 +1,89 @@
 states = {
-        "CA": "California",
-        "VA": "Virginia",
-        "MD": "Maryland",
-        "RI": "Rhode Island",
-        "NV": "Nevada"
-    }
-
+    "CA": "California",
+    "NJ": "New Jersey",
+    "WI": "Wisconsin",
+    "NY": "New York"
+}
 
 print(states["CA"])
-print(states["NV"])
+print(states["WI"])
 
 nested_dictionary = {
     "CA": {
         "NAME": "California",
-        "POPULATION": 39540000 # 39,540,000
-
-},
-
-    "VA":{
-        "NAME": "Virginia",
-        "POPULATION": 8517685  # 8,500,000
-
-},
-    "MD": {
-        "NAME": "Maryland",
-        "POPULATION": 6042718  # 6,042,718
-
-},
-
-    "RI": {
-        "NAME": "Rhode Island",
-        "POPULATION": 1057315  # 1,057,315
-
-},
-    "NV": {
-        "NAME": "Nevada",
-        "POPULATION": 3034392  # 3,023,392
-
- }
+        "POPULATION": 39500000  # 39,500,000
+    },
+    "NJ": {
+        "NAME": "New Jersey",
+        "POPULATION": 9000000  # 9,000,000
+    },
+    "WI": {
+        "NAME": "Wisconsin",
+        "POPULATION": 5800000  # 5,800,000
+    },
+    "NY": {
+        "NAME": "New York",
+        "POPULATION": 19500000  # 19,500,000
+    }
 }
 
-print(nested_dictionary["NV"]["POPULATION"])
-print(nested_dictionary["RI"]["NAME"])
+print(nested_dictionary["CA"])
+print(nested_dictionary["CA"]["POPULATION"])
 
-complex_dictionary = {"CA": {
+complex_dictionary = {
+    "CA": {
         "NAME": "California",
-        "POPULATION": 39540000, # 39,540,000
+        "POPULATION": 39500000,  # 39,500,000
         "CITIES": [
             "Fresno",
             "San Francisco",
             "Los Angeles"
-
-    ]
-
-},
-
-    "VA":{
-        "NAME": "Virginia",
-        "POPULATION": 8517685,  # 8,500,000
-        "CITIES": [
-            "Richmond",
-            "Norfolk",
-            ""
         ]
-
-},
-    "MD": {
-        "NAME": "Maryland",
-        "POPULATION": 6042718,  # 6,042,718
+    },
+    "NJ": {
+        "NAME": "New Jersey",
+        "POPULATION": 9000000,  # 9,000,000
         "CITIES": [
-            "",
-            "Newport",
-            "Warwick"
-
+            "Newark",
+            "Trenton",
+            "Princeton"
         ]
+    },
+    "WI": {
+        "NAME": "Wisconsin",
+        "POPULATION": 5800000,  # 5,800,000
+        "CITIES": [
+            "Madison",
+            "Milwaukee",
+            "Green Bay"
+        ]
+    },
+    "NY": {
+        "NAME": "New York",
+        "POPULATION": 19500000,  # 19,500,000
+        "CITIES": [
+            "New York City",
+            "Rockester",
+            "Buffalo"
+        ]
+    }
+}
 
-},
+print(complex_dictionary["NJ"]["NAME"])
+print(complex_dictionary["WI"]["CITIES"][0])
+print(complex_dictionary.keys())
+print(nested_dictionary.items())
 
-    "RI": {
-        "NAME": "Rhode Island",
-        "POPULATION": 1057315  # 1,057,315
+print()
+for key, value in complex_dictionary.items():
+    print(key)
+    print(value)
+    print("-" * 20)
 
-},
-    "NV": {
-        "NAME": "Nevada",
-        "POPULATION": 3034392  # 3,023,392
+for state, facts in complex_dictionary.items():
+    for attr, value in facts.items():
+        print(attr)
+        print(value)
+        print("-" * 20)
+    print('=' * 20)
 
- }
-}},
