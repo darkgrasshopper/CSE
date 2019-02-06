@@ -1,32 +1,35 @@
 world_map = {
-    'R19A': {
-        'NAME': "",
-        'DESCRIPTION': "This is the classroom that you are in right now. "
-                       "It has two exits to the north side.",
+    'ROOM 1': {
+        'NAME': "ROOM 1",
+        'DESCRIPTION': "This is the room that you are in right now. "
+                       "There is one exit to the South and East.",
         'PATHS': {
-            'NORTH': "PARKING_LOT"
+            'SOUTH': "ROOM 3",
+            'EAST': "ROOM 2",
+
         }
 
     },
-    "PARKING_LOT": {
-        'NAME': "The Edison Parking Lot",
-        'DESCRIPTION': "There are cars parked here." 
-                       "The south is Mr.Wiebe's room",
+    "ROOM 3": {
+        'NAME': "This is room 3 ",
+        'DESCRIPTION': "There is a drawer, and a queen sized bed." 
+                       "The south is room 5",
         'PATHS': {
-            'SOUTH': "R19A"
+            'SOUTH': "ROOM 3"
         }
     }
+
+
+
+
+
 }
 
 
 #OtherVariables
-
-current_node = world_map['R19A']
+current_node = world_map["ROOM 1"]
 directions = ["NORTH", "SOUTH", "EAST", "WEST", "UP", "DOWN"]
 playing = True
-
-
-
 
 #Controller
 while playing:
@@ -36,9 +39,9 @@ while playing:
         playing = False
     elif command.upper() in directions:
         try:
-         room_name = current_node['PATHS'][command.upper()]
-        current_node = world_map[room_name]
-    except KeyError:
-        print("I can't go that way")
+            room_name = current_node['PATHS'][command.upper()]
+            current_node = world_map[room_name]
+        except KeyError:
+            print("I can't go that way"),
 else:
-   print("Command not recognized")
+    print("Command not recognized")
