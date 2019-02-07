@@ -6,8 +6,8 @@ world_map = {
         'PATHS': {
             'SOUTH': "ROOM 3",
             'EAST': "ROOM 2",
-
         }
+
 
     },
     "ROOM 3": {
@@ -17,6 +17,13 @@ world_map = {
         'PATHS': {
             'SOUTH': "ROOM 3"
         }
+    },
+    "PATHWAY": {
+        'NAME': "This is a pathway",
+        'DESCRIPTION': "There is an exit to the south",
+        'PATHS': {}
+
+
     }
 
 
