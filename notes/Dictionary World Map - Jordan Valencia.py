@@ -13,7 +13,7 @@ world_map = {
     "ROOM 3": {
         'NAME': "This is room 3 ",
         'DESCRIPTION': "There is a drawer, and a queen sized bed." 
-                       "The south is room 5",
+                       "There is an exit to the south",
         'PATHS': {
             'SOUTH': "ROOM 3"
         }
@@ -21,10 +21,27 @@ world_map = {
     "PATHWAY": {
         'NAME': "This is a pathway",
         'DESCRIPTION': "There is an exit to the south",
-        'PATHS': {}
+        'PATHS': {
+            'SOUTH': "ROOM 5"
+        }
+    },
+    "ROOM 2": {
+        'NAME': "This is room 2",
+        'DESCRIPTION': "There is an exit to the south",
+        'PATHS': {
+            'SOUTH': "ROOM 7",
+        }
 
-
-    }
+    },
+    "ROOM 7": {
+        'NAME': "This is room 7",
+        'DESCRIPTION': "There is an exit to the west, and to the south",
+        'PATHS': {
+            'WEST': "ROOM 5",
+            'SOUTH': "ROOM 8",
+        }
+    },
+    "ROOM 5"
 
 
 
