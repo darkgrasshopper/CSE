@@ -10,11 +10,13 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/CSE$dictionary_notes.coverage" NAME="dictionary notes Coverage Results" MODIFIED="1548951869219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
+    <SUITE FILE_PATH="coverage/CSE$Jordan_Valencia___Object_Notes.coverage" NAME="Jordan Valencia - Object Notes Coverage Results" MODIFIED="1550075752483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
+    <SUITE FILE_PATH="coverage/CSE$Special_Random.coverage" NAME="Special_Random Coverage Results" MODIFIED="1550075747186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$Semester_2_Notes_Jordan_Valencia.coverage" NAME="Semester 2 Notes-Jordan Valencia Coverage Results" MODIFIED="1547136621369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$Hangman_Test.coverage" NAME="Hangman Test Coverage Results" MODIFIED="1547655172198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Hangman_Jordan_Valencia.coverage" NAME="Hangman-Jordan Valencia Coverage Results" MODIFIED="1548692333746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$oooOOO.coverage" NAME="oooOOO Coverage Results" MODIFIED="1548692339743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
-    <SUITE FILE_PATH="coverage/CSE$Dictionary_World_Map___Jordan_Valencia.coverage" NAME="Dictionary World Map - Jordan Valencia Coverage Results" MODIFIED="1549470800047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
+    <SUITE FILE_PATH="coverage/CSE$Dictionary_World_Map___Jordan_Valencia.coverage" NAME="Dictionary World Map - Jordan Valencia Coverage Results" MODIFIED="1550074160077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -34,11 +36,12 @@
     <session id="34724304">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="22" />
+          <entry key="project.closed" value="24" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.33" value="4" />
           <entry key="project.open.time.34" value="3" />
           <entry key="project.open.time.35" value="1" />
@@ -51,29 +54,29 @@
           <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="19" />
+          <entry key="py" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="19" />
+          <entry key="Python" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="41" />
-          <entry key="py" value="8043" />
+          <entry key="py" value="8805" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="41" />
-          <entry key="Python" value="8043" />
+          <entry key="Python" value="8805" />
         </counts>
       </usages-collector>
     </session>
@@ -92,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes/Dictionary World Map - Jordan Valencia.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="35" column="15" lean-forward="true" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
+            <state relative-caret-position="68">
+              <caret line="4" column="53" lean-forward="true" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -101,13 +104,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notes/Jordan Valencia - Object Notes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
               <folding>
-                <marker date="1549989722587" expanded="true" signature="23:24" ph="..." />
-                <marker date="1549989722587" expanded="true" signature="76:81" ph="..." />
-                <marker date="1549989722587" expanded="true" signature="76:82" ph="..." />
-                <marker date="1549989722587" expanded="true" signature="76:83" ph="..." />
+                <marker date="1550075747139" expanded="true" signature="46:47" ph="..." />
+                <marker date="1550075747139" expanded="true" signature="106:107" ph="..." />
+                <marker date="1550075747139" expanded="true" signature="106:115" ph="..." />
+                <marker date="1550075747139" expanded="true" signature="923:928" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/notes/Special_Random.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+              <folding>
+                <marker date="1550075747061" expanded="true" signature="34:39" ph="..." />
+                <marker date="1550075747061" expanded="true" signature="52:57" ph="..." />
               </folding>
             </state>
           </provider>
@@ -140,6 +156,7 @@
         <option value="$PROJECT_DIR$/notes/oooOOO.py" />
         <option value="$PROJECT_DIR$/notes/dictionary notes.py" />
         <option value="$PROJECT_DIR$/notes/Dictionary World Map - Jordan Valencia.py" />
+        <option value="$PROJECT_DIR$/notes/Special_Random.py" />
         <option value="$PROJECT_DIR$/notes/Jordan Valencia - Object Notes.py" />
       </list>
     </option>
@@ -182,7 +199,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/notes" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -197,7 +214,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Dictionary World Map - Jordan Valencia">
+  <component name="RunManager" selected="Python.Jordan Valencia - Object Notes">
     <configuration name="Dictionary World Map - Jordan Valencia" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -220,7 +237,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Hangman Test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Jordan Valencia - Object Notes" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -228,12 +245,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/notes" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Hangman Test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/notes/Jordan Valencia - Object Notes.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -242,7 +259,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Hangman-Jordan Valencia" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Special_Random" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -250,12 +267,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/notes" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Hangman-Jordan Valencia.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/notes/Special_Random.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -309,19 +326,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Hangman-Jordan Valencia" />
-      <item itemvalue="Python.Hangman Test" />
       <item itemvalue="Python.oooOOO" />
       <item itemvalue="Python.dictionary notes" />
       <item itemvalue="Python.Dictionary World Map - Jordan Valencia" />
+      <item itemvalue="Python.Jordan Valencia - Object Notes" />
+      <item itemvalue="Python.Special_Random" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Jordan Valencia - Object Notes" />
+        <item itemvalue="Python.Special_Random" />
         <item itemvalue="Python.Dictionary World Map - Jordan Valencia" />
         <item itemvalue="Python.dictionary notes" />
         <item itemvalue="Python.oooOOO" />
-        <item itemvalue="Python.Hangman-Jordan Valencia" />
-        <item itemvalue="Python.Hangman Test" />
       </list>
     </recent_temporary>
   </component>
@@ -340,14 +357,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35022694" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35552195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32786885" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -362,8 +378,8 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32980332" />
-      <window_info anchor="right" id="SciView" order="4" weight="0.32980332" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.295764" />
@@ -463,20 +479,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/notes/Dictionary World Map - Jordan Valencia.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="35" column="15" lean-forward="true" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
+        <state relative-caret-position="68">
+          <caret line="4" column="53" lean-forward="true" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes/Special_Random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding>
+            <marker date="1550075747061" expanded="true" signature="34:39" ph="..." />
+            <marker date="1550075747061" expanded="true" signature="52:57" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/notes/Jordan Valencia - Object Notes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
           <folding>
-            <marker date="1549989722587" expanded="true" signature="23:24" ph="..." />
-            <marker date="1549989722587" expanded="true" signature="76:81" ph="..." />
-            <marker date="1549989722587" expanded="true" signature="76:82" ph="..." />
-            <marker date="1549989722587" expanded="true" signature="76:83" ph="..." />
+            <marker date="1550075747139" expanded="true" signature="46:47" ph="..." />
+            <marker date="1550075747139" expanded="true" signature="106:107" ph="..." />
+            <marker date="1550075747139" expanded="true" signature="106:115" ph="..." />
+            <marker date="1550075747139" expanded="true" signature="923:928" ph="..." />
           </folding>
         </state>
       </provider>
