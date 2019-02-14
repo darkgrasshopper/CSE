@@ -1,5 +1,6 @@
 import Special_Random
 
+
 class WaterGun(object):
     def __init__(self, capacity, distance=30, stock=False):
         # These are things that a WaterGun has.
@@ -22,6 +23,7 @@ class WaterGun(object):
                 self.duration_of_pressure -= time
         else:
             print("There's no trigger!")
+
     def pump_it_up(self):
         self.duration_of_pressure = 5
     print("You pump the tank back to full pressure")
