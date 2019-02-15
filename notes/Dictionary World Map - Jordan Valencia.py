@@ -13,23 +13,26 @@ world_map = {
     "ROOM 3": {
         'NAME': "This is room 3 ",
         'DESCRIPTION': "There is a drawer, and a queen sized bed." 
-                       "There is an exit to the south",
+                       "There is an exit to the south and north",
         'PATHS': {
-            'SOUTH': "ROOM 3"
+            'SOUTH': "PATHWAY",
+            'NORTH': "ROOM 1",
         }
     },
     "PATHWAY": {
         'NAME': "This is a pathway",
-        'DESCRIPTION': "There is an exit to the south",
+        'DESCRIPTION': "There is an exit to the south and north",
         'PATHS': {
-            'SOUTH': "ROOM 5"
+            'SOUTH': "ROOM 5",
+            'NORTH': "ROOM 3",
         }
     },
     "ROOM 2": {
         'NAME': "This is room 2",
-        'DESCRIPTION': "There is an exit to the south",
+        'DESCRIPTION': "There is an exit to the south and west",
         'PATHS': {
-            'SOUTH': "ROOM 7",
+            'SOUTH': "HALLWAY",
+            'WEST': "ROOM 1",
         }
 
     },
@@ -41,7 +44,25 @@ world_map = {
             'SOUTH': "ROOM 8",
         }
     },
-    "ROOM 5"
+    "ROOM 5": {
+        'NAME': "This is room 5",
+        'DESCRIPTION': "There is an exit to the North,South, and East",
+        'PATHS': {
+            'NORTH': "ROOM 3",
+            'SOUTH': "ROOM 9",
+            'EAST': "ROOM 7",
+        }
+    },
+    "ROOM 9": {
+        'NAME': "This is room 9",
+        'DESCRIPTION': "There is an exit to the North, South, and East",
+        'PATHS': {
+            'NORTH': "ROOM 5",
+            'SOUTH': "ROOM 10",
+            'EAST': "ROOM 8",
+        }
+    },
+    "ROOM 8": {}
 
 
 

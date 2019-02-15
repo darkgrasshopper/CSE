@@ -1,6 +1,6 @@
 class Carrot(object):
     def __init__(self, power, distance=30, stick=False, orange=True):
-        # These are things that a WaterGun has.
+        # These are things that a Carrot has.
         # All of us these should be relevant to our program.
         self.power = power
         self.range = distance
@@ -18,7 +18,7 @@ class Carrot(object):
                 self.duration_of_bunny = 0
             else:
                 print("You shoot for %s seconds" % time)
-                self.duration_of_pressure -= time
+                self.duration_of_bunny -= time
         else:
             print("There's no trigger!")
 
@@ -31,3 +31,9 @@ my_carrot = Carrot(5.2, 40, True)
 your_carrot = Carrot(1.0, 1, False)
 wiebe_carrot = Carrot(5, 50, True)
 yahir_carrot = Carrot(0.1)
+
+
+my_carrot.shoot(5)
+your_carrot.shoot(10)
+wiebe_carrot.shoot(2)
+yahir_carrot.shoot(6)
