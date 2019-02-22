@@ -10,12 +10,11 @@ class Room(object):
 
 ROOM1 = Room("ROOM1", None, 'ROOM3', 'ROOM2', None, "This is room 1 and there's an exit to the South"
                                                     " and East")
-ROOM3 = Room("ROOM3", 'ROOM1', 'ROOM5', None, None, "This is room 3 and there's an exit to the South",
-                                                 "You can go back North")
+ROOM3 = Room("ROOM3", 'ROOM1', 'ROOM5', None, None, "This is room 3 and there's an exit to the South"
+                                                    "You can go back North")
 ROOM5 = Room("ROOM5", 'ROOM3', 'ROOM9', 'ROOM7', None, "This is room 5 and there's an exit to the South"
-                                                       "There is also an exit to the East" )
-
-R19A.south = parking_lot
+                                                       "There is also an exit to the East")
+ROOM
 
 
 #Option2
