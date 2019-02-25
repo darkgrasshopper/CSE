@@ -116,15 +116,14 @@ world_map = {
         'DESCRIPTION': "There is an exit to the East, and North",
         'PATHS': {
             'EAST': "ROOM 13",
-            'NORTH': " EXIT ROOM"
+            'NORTH': "EXIT",
         }
     },
     "EXIT": {
         'NAME': "This is the exit",
-        'DESCRIPTION': "YOU HAVE MADE IT TO THE EXIT CONGRATS!! You can go back South or escape to North",
+        'DESCRIPTION': "",
         'PATHS': {
             'SOUTH': "ROOM 14",
-            'NORTH': "ESCAPE",
         }
     }
 
@@ -143,6 +142,10 @@ playing = True
 #Controller
 while playing:
     print(current_node["NAME"])
+    print(current_node["DESCRIPTION"])
+    if current_node == world_map['EXIT']:
+        print("YOU WIN!!!")
+        quit(0)
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
