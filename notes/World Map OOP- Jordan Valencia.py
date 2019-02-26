@@ -33,3 +33,45 @@ ROOM13 = Room("ROOM13", 'ROOM14', None, None, 'ROOM12', "This is room 13 and the
 ROOM14 = Room("ROOM14", 'EXIT', None, 'ROOM13', 'None', "This is room 14 and there's an exit to the North and East"),
 
 EXIT = Room("EXIT ROOM", None, None, None, None, "CONGRATS YOU WIN"),
+
+
+class Player(object):
+    def __init__(self, starting_location):
+        self.health = 100
+        self.current_location = starting_location
+        self.inventory = []
+        self.damage = 10
+
+    def move(self, new_location):
+        """This method moves a character to a new location
+
+        :param new_location: The variable containing a room object
+        """
+        self.current_location = new_location
+
+
+player = Player(ROOM1)
+
+playing = True
+directions = ['north', 'south', 'east', 'west', 'up', 'down']
+
+
+#Controller
+while playing:
+    print(player.current_location.name)
+    print(player.current_location.description)
+    if current_node == world_map['EXIT']:
+        print("YOU WIN!!!")
+        quit(0)
+    command = input(">_")
+    if command.lower() in ['q', 'quit', 'exit']:
+        playing = False
+    elif command.lower() in directions:
+        try:
+            # command = 'north
+            room_object = getattr(player.current_location, command)
+            player.move(room_object)
+        except KeyError:
+            print("I can't go that way"),
+else:
+    print("Command not recognized")

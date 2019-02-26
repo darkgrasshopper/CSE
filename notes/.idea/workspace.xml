@@ -19,7 +19,7 @@
     <SUITE FILE_PATH="coverage/notes$Jordan_Valecnia___My_Object.coverage" NAME="Jordan Valecnia - My Object Coverage Results" MODIFIED="1550853627681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Jordan_Valencia___Mad_Libs_2.coverage" NAME="Jordan Valencia - Mad Libs 2 Coverage Results" MODIFIED="1543507379688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Dictionary_World_Map___Jordan_Valencia.coverage" NAME="Dictionary World Map - Jordan Valencia Coverage Results" MODIFIED="1551196438095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$World_Map_OOP__Jordan_Valencia.coverage" NAME="World Map OOP- Jordan Valencia Coverage Results" MODIFIED="1551196443393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$World_Map_OOP__Jordan_Valencia.coverage" NAME="World Map OOP- Jordan Valencia Coverage Results" MODIFIED="1551197414169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Jordan_Valencia___Lucky_Sevens.coverage" NAME="Jordan Valencia - Lucky Sevens Coverage Results" MODIFIED="1543248840664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
@@ -86,13 +86,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="15039" />
+          <entry key="py" value="15666" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="15039" />
+          <entry key="Python" value="15666" />
         </counts>
       </usages-collector>
     </session>
@@ -102,10 +102,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/World Map OOP- Jordan Valencia.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="141">
+              <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
               <folding>
-                <marker date="1551196622501" expanded="true" signature="19:24" ph="..." />
+                <marker date="1551199353367" expanded="true" signature="19:24" ph="..." />
               </folding>
             </state>
           </provider>
@@ -114,8 +114,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dictionary World Map - Jordan Valencia.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2380">
-              <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
+            <state relative-caret-position="187">
+              <caret line="139" selection-start-line="139" selection-end-line="158" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -160,7 +160,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-90" />
     <option name="y" value="100" />
     <option name="width" value="1346" />
@@ -350,7 +350,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
@@ -484,17 +484,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Dictionary World Map - Jordan Valencia.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2380">
-          <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
+        <state relative-caret-position="187">
+          <caret line="139" selection-start-line="139" selection-end-line="158" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/World Map OOP- Jordan Valencia.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="141">
+          <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
           <folding>
-            <marker date="1551196622501" expanded="true" signature="19:24" ph="..." />
+            <marker date="1551199353367" expanded="true" signature="19:24" ph="..." />
           </folding>
         </state>
       </provider>
