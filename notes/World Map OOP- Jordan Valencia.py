@@ -32,8 +32,4 @@ ROOM13 = Room("ROOM13", 'ROOM14', None, None, 'ROOM12', "This is room 13 and the
 
 ROOM14 = Room("ROOM14", 'EXIT', None, 'ROOM13', 'None', "This is room 14 and there's an exit to the North and East"),
 
-EXIT =
-
-
-
-
+EXIT = Room("EXIT ROOM", None, None, None, None, "CONGRATS YOU WIN"),
