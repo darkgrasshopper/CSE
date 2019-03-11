@@ -139,6 +139,8 @@ current_node = world_map["ROOM 1"]
 directions = ["NORTH", "SOUTH", "EAST", "WEST", "UP", "DOWN"]
 playing = True
 
+
+
 # Controller
 while playing:
     print(current_node["NAME"])
