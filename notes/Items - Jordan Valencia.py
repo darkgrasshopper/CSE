@@ -83,9 +83,7 @@ class SatansSword(Sword):
         self.description = "It inflicts 55 damage"
         self.duration = 4.0
         self.length = "long"
-        
 
-class
 
 class Shield(Weapons):
     def __init__(self, name, material, protection, description):
@@ -108,4 +106,22 @@ class SteelShield(Shield):
         self.description = "this shield offers 10 protection"
 
 
-class
+class GlassShield(Shield):
+    def __init__(self, name, material, protection, description):
+        super(GlassShield, self).__init__(name, material, protection, description)
+        self.protection = 11
+        self.description = "this shield offers 11 protection"
+
+
+class GoldShield(Shield):
+    def __init__(self, name, material, protection, description):
+        super(GoldShield, self).__init__(name, material, protection, description)
+        self.protection = 15
+        self.description = "this shield offers 15 protection"
+
+
+class DiamondShield(Shield):
+    def __init__(self, name, material, protection, description):
+        super(DiamondShield, self). __init__(name, material, protection, description)
+        self.protection = 25
+        self.description = "this shield offers 25 protection"
