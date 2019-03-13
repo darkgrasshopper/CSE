@@ -23,6 +23,151 @@ class Player(object):
         self.current_location = new_location
 
 
+class Item(object):
+    def __init__(self, name, material):
+        self.name = name
+        self.material = material
+
+
+class Weapon(Item):
+    def __init__(self, name, damage, material,):
+        super(Item, self).__init__(name, material)
+        self.damage = damage
+
+
+class Consumables(Item):
+    def __init__(self, name, heal, description):
+        super(Consumables, self).__init__(name)
+        self.heal = heal
+        self.description = description
+
+
+class HealthPotionLvl1(Consumables):
+    def __init__(self, name, heal, description):
+        super(HealthPotionLvl1, self).__init__(name, heal, description)
+        self.heal = 10
+        self.description = "it heals you 10 health"
+
+
+class HealthPotionLvl2(Consumables):
+    def __init__(self, name, heal, description):
+        super(HealthPotionLvl2, self).__init__(name, heal, description)
+        self.heal = 15
+        self.description = "it heals you 15 health"
+
+
+class HealthPotionLvl3(Consumables):
+    def __init__(self, name, heal, description):
+        super(HealthPotionLvl3, self).__init__(name, heal, description)
+        self.heal = 20
+        self.description = "it heals you 20 health"
+
+
+class Sword(Weapon):
+    def __init__(self, name, material, damage, description, duration, length):
+        super(Sword, self).__init__(name, material)
+        self.damage = damage
+        self.description = description
+        self.duration = duration
+        self.length = length
+
+
+class StoneSword(Sword):
+    def __init__(self, name, material, damage, description, duration, length):
+        super(StoneSword, self).__init__(name, material, damage, description, duration, length)
+        self.damage = 10
+        self.description = "It inflicts 10 damage"
+        self.duration = 1
+        self.length = "medium"
+
+
+class GoldSword(Sword):
+    def __init__(self, name, material, damage, description, duration, length):
+        super(GoldSword, self). __init__(name, material, damage, description, duration, length)
+        self.damage = 20
+        self.description = "It inflicts 20 damage"
+        self.duration = 2
+        self.length = "medium"
+
+
+class IronSword(Sword):
+    def __init__(self, name, material, damage, description, duration, length):
+        super(IronSword, self).__init__(name, material, damage, description, duration, length)
+        self.damage = 30
+        self.description = "It inflicts 30 damage"
+        self.duration = 2.5
+        self.length = "long"
+
+
+class SatansSword(Sword):
+    def __init__(self, name, material, damage, description, duration, length):
+        super(SatansSword, self).__init__(name, material, damage, description, duration, length)
+        self.damage = 30
+        self.description = "It inflicts 55 damage"
+        self.duration = 4.0
+        self.length = "long"
+
+
+class Shield(Weapon):
+    def __init__(self, name, material, protection, description):
+        super(Shield, self).__init__(name, material)
+        self.protection = protection
+        self.description = description
+
+
+class WoodenShield(Shield):
+    def __init__(self, name, material, protection, description):
+        super(WoodenShield, self).__init__(name, material, protection, description)
+        self.protection = 5
+        self.description = "this shield offers 5 protection"
+
+
+class SteelShield(Shield):
+    def __init__(self, name, material, protection, description):
+        super(SteelShield, self).__init__(name, material, protection, description)
+        self.protection = 10
+        self.description = "this shield offers 10 protection"
+
+
+class GlassShield(Shield):
+    def __init__(self, name, material, protection, description):
+        super(GlassShield, self).__init__(name, material, protection, description)
+        self.protection = 11
+        self.description = "this shield offers 11 protection"
+
+
+class GoldShield(Shield):
+    def __init__(self, name, material, protection, description):
+        super(GoldShield, self).__init__(name, material, protection, description)
+        self.protection = 15
+        self.description = "this shield offers 15 protection"
+
+
+class DiamondShield(Shield):
+    def __init__(self, name, material, protection, description):
+        super(DiamondShield, self). __init__(name, material, protection, description)
+        self.protection = 25
+        self.description = "this shield offers 25 protection"
+
+
+class Character(object):
+    def __init__(self, name,health, weapon, armor):
+        self.name = name
+        self.health = health
+        self.weapon = weapon
+        self.armor = armor
+
+    def take_damage(self, damage):
+        self.health -= damage
+        if self.health < 0:
+            self.health = 0
+        print("%s has %d health left" % (self.name, self.health))
+
+    def attack(self, target):
+         print("%s attacks %s for %d damage" % (self.name, target.name, self.weapon.damage))
+         target.take_damage(self.weapon.damage)
+
+
 ROOM1 = Room("ROOM1", None, 'ROOM3', 'ROOM2', None, "This is room 1 and there's an exit to the South"
                                                     " and East")
 ROOM3 = Room("ROOM3", 'ROOM1', 'ROOM5', None, None, "This is room 3 and there's an exit to the South."
@@ -46,6 +191,21 @@ player = Player(ROOM1)
 
 playing = True
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
+
+# Items
+sword = Weapon("Sword", 15)
+sword2 = Weapon("Orc Sword", 5)
+
+# Players
+player = Player(ROOM1)
+
+# Characters
+c1 = Character("Orc1", 100, sword, None)
+c2 = Character("Orc2", 100, sword2, None)
+c1.attack(c2)
+c2.attack(c1)
+
+
 
 
 # Controller
