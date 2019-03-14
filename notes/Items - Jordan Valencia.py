@@ -4,46 +4,55 @@ class Item(object):
         self.material = material
 
 
-class Weapons(Item):
-    def __init__(self, name, material, sword, shield, bow):
-        super(Item, self).__init__(name, material)
-        self.sword = sword
-        self.shield = shield
-        self.bow = bow
+class Weapon(Item):
+    def __init__(self, name, damage, material,):
+        super(Weapon, self).__init__(name, material)
+        self.damage = damage
 
 
 class Consumables(Item):
-    def __init__(self, name, heal, description):
-        super(Consumables, self).__init__(name)
+    def __init__(self, name, heal, poison, description, material):
+        super(Consumables, self).__init__(name, material)
         self.heal = heal
         self.description = description
+        self.poison = poison
 
 
 class HealthPotionLvl1(Consumables):
-    def __init__(self, name, heal, description):
-        super(HealthPotionLvl1, self).__init__(name, heal, description)
+    def __init__(self, name, heal, poison, description):
+        super(HealthPotionLvl1, self).__init__(name, heal, poison, description, None)
         self.heal = 10
         self.description = "it heals you 10 health"
+        self.poison = None
 
 
 class HealthPotionLvl2(Consumables):
-    def __init__(self, name, heal, description):
-        super(HealthPotionLvl2, self).__init__(name, heal, description)
+    def __init__(self, name, heal, poison, description):
+        super(HealthPotionLvl2, self).__init__(name, heal, poison, description, None)
         self.heal = 15
         self.description = "it heals you 15 health"
+        self.poison = None
 
 
 class HealthPotionLvl3(Consumables):
-    def __init__(self, name, heal, description):
-        super(HealthPotionLvl3, self).__init__(name, heal, description)
+    def __init__(self, name, heal, poison, description):
+        super(HealthPotionLvl3, self).__init__(name, heal, poison, description, None)
         self.heal = 20
+        self.poison = None
         self.description = "it heals you 20 health"
 
 
-class Sword(Weapons):
+class PoisonPotionLvl1(Consumables):
+    def __init__(self, name, heal, poison, description):
+        super(PoisonPotionLvl1, self).__init__(name, heal, poison, description, None)
+        self.heal = None
+        self.poison = 10
+        self.description = "it takes away 10 health"
+
+
+class Sword(Weapon):
     def __init__(self, name, material, damage, description, duration, length):
-        super(Sword, self).__init__(name, material)
-        self.damage = damage
+        super(Sword, self).__init__(name, damage, material)
         self.description = description
         self.duration = duration
         self.length = length
@@ -85,9 +94,9 @@ class SatansSword(Sword):
         self.length = "long"
 
 
-class Shield(Weapons):
+class Shield(Weapon):
     def __init__(self, name, material, protection, description):
-        super(Shield, self).__init__(name, material)
+        super(Shield, self).__init__(name, None, material)
         self.protection = protection
         self.description = description
 

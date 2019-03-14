@@ -13,7 +13,7 @@ world_map = {
     "ROOM 3": {
         'NAME': "This is room 3 ",
         'DESCRIPTION': "There is a drawer, and a queen sized bed." 
-                       "There is an exit to the south and north",
+                       " There is an exit to the south and north",
         'PATHS': {
             'SOUTH': "PATHWAY",
             'NORTH': "ROOM 1",
@@ -138,7 +138,6 @@ world_map = {
 current_node = world_map["ROOM 1"]
 directions = ["NORTH", "SOUTH", "EAST", "WEST", "UP", "DOWN"]
 playing = True
-
 
 
 # Controller
