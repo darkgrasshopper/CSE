@@ -30,10 +30,11 @@ class Item(object):
 
 
 class Weapon(Item):
-    def __init__(self, name, damage, material, protection):
+    def __init__(self, name, damage, material, protection, effectivity):
         super(Weapon, self).__init__(name, material)
         self.damage = damage
         self.protection = protection
+        self.effectivity = effectivity
 
 
 class Consumables(Item):
@@ -43,16 +44,9 @@ class Consumables(Item):
         self.description = description
 
 
-class HealthPotionLvl3(Consumables):
-    def __init__(self, name, heal, description):
-        super(HealthPotionLvl3, self).__init__(name, heal, description, None)
-        self.heal = 20
-        self.description = "it heals you 20 health"
-
-
 class Sword(Weapon):
     def __init__(self, name, material, damage, description, duration, length):
-        super(Sword, self).__init__(name, damage, material)
+        super(Sword, self).__init__(name, damage, material, damage, description)
         self.description = description
         self.duration = duration
         self.length = length
@@ -60,11 +54,13 @@ class Sword(Weapon):
 
 class Shield(Weapon):
     def __init__(self, name, material, protection, description):
-        super(Shield, self).__init__(name, None, material)
+        super(Shield, self).__init__(name, None, material, protection, description)
         self.protection = protection
         self.description = description
 
 
+consumable = Consumables("Health Potion lvl 1", 10, "it heals you for 10 health", None)
+consumable1 = Consumables
 sword = Weapon("Stone Sword", 10, "Stone", None)
 sword2 = Weapon("Gold Sword", 20, "Gold", None)
 sword3 = Weapon("Iron Sword", 30, "Iron", None)
@@ -72,8 +68,10 @@ sword4 = Weapon("Satans Sword", 30, "Obsidian", None)
 shield = Weapon("Wooden Shield", None, "Wood", 5)
 shield2 = Weapon("Steel Shield", None, "Steel", 10)
 shield3 = Weapon("Glass Shield", None, "Glass", 11)
-shield4 = Weapon("Gold Shield", None, "Gold Shield", 15)
-
+shield4 = Weapon("Gold Shield", None, "Gold", 15)
+shield5 = Weapon("Diamond Shield", None, "Diamond", 25)
+tool = Weapon("Stone Shovel", None, "Stone", None, 5)
+tool2 = Weapon("Stone PickAxe", None, "Stone", None, 5)
 
 
 class Character(object):
