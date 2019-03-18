@@ -50,6 +50,22 @@ class PoisonPotionLvl1(Consumables):
         self.description = "it takes away 10 health"
 
 
+class PoisonPotionLvl2(Consumables):
+    def __init__(self, name, heal, poison, description):
+        super(PoisonPotionLvl2, self).__init__(name, heal, poison, description, None)
+        self.heal = None
+        self.poison = 15
+        self.description = "it takes away 15 health"
+
+
+class PoisonPotionLvl3(Consumables):
+    def __init__(self, name, heal, poison, description):
+        super(PoisonPotionLvl3, self).__init__(name, heal, poison, description, None)
+        self.heal = None
+        self.poison = 20
+        self.description = "it takes away 20 health"
+
+
 class Sword(Weapon):
     def __init__(self, name, material, damage, description, duration, length):
         super(Sword, self).__init__(name, damage, material)
@@ -104,7 +120,7 @@ class Shield(Weapon):
 class WoodenShield(Shield):
     def __init__(self, name, material, protection, description):
         super(WoodenShield, self).__init__(name, material, protection, description)
-        self.protection = 5
+        self.protection =  5
         self.description = "this shield offers 5 protection"
 
 
@@ -134,3 +150,24 @@ class DiamondShield(Shield):
         super(DiamondShield, self). __init__(name, material, protection, description)
         self.protection = 25
         self.description = "this shield offers 25 protection"
+
+
+class Tool(Item):
+    def __init__(self, name, material, effectivity, description):
+        super(Tool, self).__init__(name, material)
+        self.effectivity = effectivity
+        self.description = description
+
+
+class StoneShovel(Tool):
+    def __init__(self, name, material, effectivity, description):
+        super(StoneShovel, self). __init__(name, material, effectivity, description)
+        self.effectivity = 5
+        self.description = "this stone shovel helps you dig with a 5 effectivity"
+
+
+class StonePickAxe(Tool):
+    def __init__(self,name, material, effectivity, description):
+        super(StonePickAxe, self). __init__(name, material, effectivity, description)
+        self.effectivity = 5
+        self.description = "this Stone PickAxe helps you mine with a 5 effectivity"
