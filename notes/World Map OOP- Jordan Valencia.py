@@ -59,19 +59,27 @@ class Shield(Weapon):
         self.description = description
 
 
+class Tool(Item):
+    def __init__(self, name, material, effectivity, description):
+        super(Tool, self).__init__(name, material)
+        self.effectivity = effectivity
+        self.description = description
+
+
 consumable = Consumables("Health Potion lvl 1", 10, "it heals you for 10 health", None)
 consumable1 = Consumables
-sword = Weapon("Stone Sword", 10, "Stone", None)
-sword2 = Weapon("Gold Sword", 20, "Gold", None)
-sword3 = Weapon("Iron Sword", 30, "Iron", None)
-sword4 = Weapon("Satans Sword", 30, "Obsidian", None)
-shield = Weapon("Wooden Shield", None, "Wood", 5)
-shield2 = Weapon("Steel Shield", None, "Steel", 10)
-shield3 = Weapon("Glass Shield", None, "Glass", 11)
-shield4 = Weapon("Gold Shield", None, "Gold", 15)
-shield5 = Weapon("Diamond Shield", None, "Diamond", 25)
-tool = Weapon("Stone Shovel", None, "Stone", None, 5)
-tool2 = Weapon("Stone PickAxe", None, "Stone", None, 5)
+
+stone_sword = Sword("Stone Sword", "Stone", 10, "It inflicts 10 damage", 1, "medium")
+gold_sword = Sword("Gold Sword", "Gold", 20, "It inflicts 20 damage", 2, "medium")
+iron_sword = Sword("Iron Sword", "Iron", 30, "It inflicts 30 damage", 2.5, "long")
+satans_sword = Sword("Satan's Sword", "Souls", 30, "It inflicts 30 damage", 4, "long")
+wooden_shield = Shield("Wooden Shield", "Wood", 5, "this shield offers 5 protection")
+steel_shield = Shield("Steel Shield", "Steel", 10, "this shield offers 10 protection")
+glass_shield = Shield("Glass Shield", "Glass", 11, "this shield offers 11 protection")
+gold_shield = Shield("Gold Shield", "Gold", 15, "this shield offers 15 protection")
+diamond_shield = Shield("Diamond Shield", "Diamonds", 25, "this shield offers 25 protection"
+tool = Tool("Stone Shovel", None, "Stone", None, 5,)
+tool2 = Tool("Stone PickAxe", None, "Stone", None, 5)
 
 
 class Character(object):

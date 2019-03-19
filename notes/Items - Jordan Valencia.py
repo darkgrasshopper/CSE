@@ -120,7 +120,7 @@ class Shield(Weapon):
 class WoodenShield(Shield):
     def __init__(self, name, material, protection, description):
         super(WoodenShield, self).__init__(name, material, protection, description)
-        self.protection =  5
+        self.protection = 5
         self.description = "this shield offers 5 protection"
 
 
@@ -167,7 +167,7 @@ class StoneShovel(Tool):
 
 
 class StonePickAxe(Tool):
-    def __init__(self,name, material, effectivity, description):
+    def __init__(self, name, material, effectivity, description):
         super(StonePickAxe, self). __init__(name, material, effectivity, description)
         self.effectivity = 5
         self.description = "this Stone PickAxe helps you mine with a 5 effectivity"
