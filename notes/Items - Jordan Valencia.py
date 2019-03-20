@@ -153,21 +153,21 @@ class DiamondShield(Shield):
 
 
 class Tool(Item):
-    def __init__(self, name, material, effectivity, description):
+    def __init__(self, name, material, efficacy, description):
         super(Tool, self).__init__(name, material)
-        self.effectivity = effectivity
+        self.efficacy = efficacy
         self.description = description
 
 
 class StoneShovel(Tool):
-    def __init__(self, name, material, effectivity, description):
-        super(StoneShovel, self). __init__(name, material, effectivity, description)
-        self.effectivity = 5
+    def __init__(self, name, material, efficacy, description):
+        super(StoneShovel, self). __init__(name, material, efficacy, description)
+        self.efficacy = 5
         self.description = "this stone shovel helps you dig with a 5 effectivity"
 
 
 class StonePickAxe(Tool):
-    def __init__(self, name, material, effectivity, description):
-        super(StonePickAxe, self). __init__(name, material, effectivity, description)
-        self.effectivity = 5
+    def __init__(self, name, material, efficacy, description):
+        super(StonePickAxe, self). __init__(name, material, efficacy, description)
+        self.efficacy = 5
         self.description = "this Stone PickAxe helps you mine with a 5 effectivity"

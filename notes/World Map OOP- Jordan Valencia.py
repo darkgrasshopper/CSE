@@ -38,7 +38,7 @@ class Weapon(Item):
 
 
 class Consumables(Item):
-    def __init__(self, name, heal, description, material):
+    def __init__(self, name, heal, material, description):
         super(Consumables, self).__init__(name, material)
         self.heal = heal
         self.description = description
@@ -60,15 +60,18 @@ class Shield(Weapon):
 
 
 class Tool(Item):
-    def __init__(self, name, material, effectivity, description):
+    def __init__(self, name, material, efficacy, description):
         super(Tool, self).__init__(name, material)
-        self.effectivity = effectivity
+        self.efficacy = efficacy
         self.description = description
 
 
-consumable = Consumables("Health Potion lvl 1", 10, "it heals you for 10 health", None)
-consumable1 = Consumables
-
+health_potion_lvl1 = Consumables("Health Potion lvl 1", 10, None, "it heals you for 10 health")
+health_potion_lvl2 = Consumables("Health Potion lvl 2", 15, None, "it heals you for 15 health")
+health_potion_lvl3 = Consumables("Health Potion lvl 3", 20, None, "it heals you for 20 health")
+poison_potion_lvl1 = Consumables("Poison Potion lvl 1", 10, None, "it takes away 10 health")
+poison_potion_lvl2 = Consumables("Poison Potion lvl 2", 15, None, "it takes away 15 health")
+poison_potion_lvl3 = Consumables("Poison Potion lvl 3", 20, None, "it takes away 20 health")
 stone_sword = Sword("Stone Sword", "Stone", 10, "It inflicts 10 damage", 1, "medium")
 gold_sword = Sword("Gold Sword", "Gold", 20, "It inflicts 20 damage", 2, "medium")
 iron_sword = Sword("Iron Sword", "Iron", 30, "It inflicts 30 damage", 2.5, "long")
@@ -77,9 +80,9 @@ wooden_shield = Shield("Wooden Shield", "Wood", 5, "this shield offers 5 protect
 steel_shield = Shield("Steel Shield", "Steel", 10, "this shield offers 10 protection")
 glass_shield = Shield("Glass Shield", "Glass", 11, "this shield offers 11 protection")
 gold_shield = Shield("Gold Shield", "Gold", 15, "this shield offers 15 protection")
-diamond_shield = Shield("Diamond Shield", "Diamonds", 25, "this shield offers 25 protection"
-tool = Tool("Stone Shovel", None, "Stone", None, 5,)
-tool2 = Tool("Stone PickAxe", None, "Stone", None, 5)
+diamond_shield = Shield("Diamond Shield", "Diamonds", 25, "this shield offers 25 protection")
+stone_shovel = Tool("Stone Shovel", "Stone", 5, "this stone shovel helps you dig with a 5 efficiency")
+stone_pickAxe = Tool("Stone PickAxe", "Stone", 5, "this stone pickAxe helps you mine with a 5 efficiency")
 
 
 class Character(object):
@@ -125,8 +128,8 @@ playing = True
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
 
 # Items
-sword = Weapon("Sword", 15, None)
-sword2 = Weapon("Orc Sword", 5, None)
+sword = Weapon("Sword", 15, None, None, None)
+sword2 = Weapon("Orc Sword", 5, None, None, None)
 
 
 # Characters
