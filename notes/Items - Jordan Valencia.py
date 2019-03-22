@@ -19,51 +19,33 @@ class Consumables(Item):
 
 
 class HealthPotionLvl1(Consumables):
-    def __init__(self, name, heal, poison, description):
-        super(HealthPotionLvl1, self).__init__(name, heal, poison, description, None)
-        self.heal = 10
-        self.description = "it heals you 10 health"
-        self.poison = None
+    def __init__(self, name):
+        super(HealthPotionLvl1, self).__init__(name, 10, None, "it heals you 10 health", None)
 
 
 class HealthPotionLvl2(Consumables):
-    def __init__(self, name, heal, poison, description):
-        super(HealthPotionLvl2, self).__init__(name, heal, poison, description, None)
-        self.heal = 15
-        self.description = "it heals you 15 health"
-        self.poison = None
+    def __init__(self, name):
+        super(HealthPotionLvl2, self).__init__(name, 15, None, "it heals you 15 health", None)
 
 
 class HealthPotionLvl3(Consumables):
-    def __init__(self, name, heal, poison, description):
-        super(HealthPotionLvl3, self).__init__(name, heal, poison, description, None)
-        self.heal = 20
-        self.poison = None
-        self.description = "it heals you 20 health"
+    def __init__(self, name):
+        super(HealthPotionLvl3, self).__init__(name, 20, None, "it heals you 20 health", None)
 
 
 class PoisonPotionLvl1(Consumables):
-    def __init__(self, name, heal, poison, description):
-        super(PoisonPotionLvl1, self).__init__(name, heal, poison, description, None)
-        self.heal = None
-        self.poison = 10
-        self.description = "it takes away 10 health"
+    def __init__(self, name):
+        super(PoisonPotionLvl1, self).__init__(name, None, 10, "it takes away 10 health", None)
 
 
 class PoisonPotionLvl2(Consumables):
-    def __init__(self, name, heal, poison, description):
-        super(PoisonPotionLvl2, self).__init__(name, heal, poison, description, None)
-        self.heal = None
-        self.poison = 15
-        self.description = "it takes away 15 health"
+    def __init__(self, name):
+        super(PoisonPotionLvl2, self).__init__(name, None, 15, "it takes away 15 health", None)
 
 
 class PoisonPotionLvl3(Consumables):
-    def __init__(self, name, heal, poison, description):
-        super(PoisonPotionLvl3, self).__init__(name, heal, poison, description, None)
-        self.heal = None
-        self.poison = 20
-        self.description = "it takes away 20 health"
+    def __init__(self, name):
+        super(PoisonPotionLvl3, self).__init__(name, None, 20, "it takes away 20 health", None)
 
 
 class Sword(Weapon):
@@ -75,39 +57,23 @@ class Sword(Weapon):
 
 
 class StoneSword(Sword):
-    def __init__(self, name, material, damage, description, duration, length):
-        super(StoneSword, self).__init__(name, material, damage, description, duration, length)
-        self.damage = 10
-        self.description = "It inflicts 10 damage"
-        self.duration = 1
-        self.length = "medium"
+    def __init__(self, name):
+        super(StoneSword, self).__init__(name, "stone", 10, "It inflicts 10 damage", 1, "medium")
 
 
 class GoldSword(Sword):
     def __init__(self, name, material, damage, description, duration, length):
-        super(GoldSword, self). __init__(name, material, damage, description, duration, length)
-        self.damage = 20
-        self.description = "It inflicts 20 damage"
-        self.duration = 2
-        self.length = "medium"
+        super(GoldSword, self). __init__(name, "gold", 20, "It inflicts 20 damage", 2, "medium")
 
 
 class IronSword(Sword):
     def __init__(self, name, material, damage, description, duration, length):
-        super(IronSword, self).__init__(name, material, damage, description, duration, length)
-        self.damage = 30
-        self.description = "It inflicts 30 damage"
-        self.duration = 2.5
-        self.length = "long"
+        super(IronSword, self).__init__(name, "iron", 30, "It inflicts 30 damage", 2.5, "long")
 
 
 class SatansSword(Sword):
-    def __init__(self, name, material, damage, description, duration, length):
-        super(SatansSword, self).__init__(name, material, damage, description, duration, length)
-        self.damage = 30
-        self.description = "It inflicts 55 damage"
-        self.duration = 4.0
-        self.length = "long"
+    def __init__(self, name):
+        super(SatansSword, self).__init__(name, "obsidian", 30, "It inflicts 55 damage", 4.0, "long")
 
 
 class Shield(Weapon):
@@ -118,38 +84,28 @@ class Shield(Weapon):
 
 
 class WoodenShield(Shield):
-    def __init__(self, name, material, protection, description):
-        super(WoodenShield, self).__init__(name, material, protection, description)
-        self.protection = 5
-        self.description = "this shield offers 5 protection"
+    def __init__(self, name):
+        super(WoodenShield, self).__init__(name, "wood", 5, "this shield offers 5 protection")
 
 
 class SteelShield(Shield):
-    def __init__(self, name, material, protection, description):
-        super(SteelShield, self).__init__(name, material, protection, description)
-        self.protection = 10
-        self.description = "this shield offers 10 protection"
+    def __init__(self, name):
+        super(SteelShield, self).__init__(name, "steel", 10, "this shield offers 10 protection")
 
 
 class GlassShield(Shield):
     def __init__(self, name, material, protection, description):
-        super(GlassShield, self).__init__(name, material, protection, description)
-        self.protection = 11
-        self.description = "this shield offers 11 protection"
+        super(GlassShield, self).__init__(name, "glass", 11, "this shield offers 11 protection")
 
 
 class GoldShield(Shield):
-    def __init__(self, name, material, protection, description):
-        super(GoldShield, self).__init__(name, material, protection, description)
-        self.protection = 15
-        self.description = "this shield offers 15 protection"
+    def __init__(self, name):
+        super(GoldShield, self).__init__(name, "gold", 15, "this shield offers 15 protection")
 
 
 class DiamondShield(Shield):
-    def __init__(self, name, material, protection, description):
-        super(DiamondShield, self). __init__(name, material, protection, description)
-        self.protection = 25
-        self.description = "this shield offers 25 protection"
+    def __init__(self, name):
+        super(DiamondShield, self). __init__(name, "diamond", 25, "this shield offers 25 protection")
 
 
 class Tool(Item):
@@ -160,14 +116,10 @@ class Tool(Item):
 
 
 class StoneShovel(Tool):
-    def __init__(self, name, material, efficacy, description):
-        super(StoneShovel, self). __init__(name, material, efficacy, description)
-        self.efficacy = 5
-        self.description = "this stone shovel helps you dig with a 5 effectivity"
+    def __init__(self, name):
+        super(StoneShovel, self). __init__(name, "stone", 5, "this stone shovel helps you dig with a 5 effectivity")
 
 
 class StonePickAxe(Tool):
-    def __init__(self, name, material, efficacy, description):
-        super(StonePickAxe, self). __init__(name, material, efficacy, description)
-        self.efficacy = 5
-        self.description = "this Stone PickAxe helps you mine with a 5 effectivity"
+    def __init__(self, name):
+        super(StonePickAxe, self). __init__(name, "stone", 5, "this Stone PickAxe helps you mine with a 5 effectivity")
