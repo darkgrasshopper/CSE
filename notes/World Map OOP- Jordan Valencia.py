@@ -1,26 +1,13 @@
 class Room(object):
-    def __init__(self, name, north=None, south=None, east=None, west=None, description=""):
+    def __init__(self, name, north=None, south=None, east=None, west=None, description="", items=[], characters=[]):
         self.name = name
         self.north = north
         self.south = south
         self.east = east
         self.west = west
         self.description = description
-
-
-class Player(object):
-    def __init__(self, starting_location):
-        self.health = 100
-        self.current_location = starting_location
-        self.inventory = []
-        self.damage = 10
-
-    def move(self, new_location):
-        """This method moves a character to a new location
-
-        :param new_location: The variable containing a room object
-        """
-        self.current_location = new_location
+        self.items = items
+        self.characters = characters
 
 
 class Item(object):
@@ -151,11 +138,13 @@ class StonePickAxe(Tool):
 
 
 class Character(object):
-    def __init__(self, name, health, weapon, armor):
+    def __init__(self, name, health, weapon, armor, inventory, new_location):
         self.name = name
         self.health = health
         self.weapon = weapon
         self.armor = armor
+        self.inventory = inventory
+        self.current_location = new_location
 
     def take_damage(self, damage):
         self.health -= damage
@@ -167,14 +156,20 @@ class Character(object):
         print("%s attacks %s for %d damage" % (self.name, target.name, self.weapon.damage))
         target.take_damage(self.weapon.damage)
 
+    def move(self, new_location):
+        """This method moves a character to a new location
 
+        :param new_location: The variable containing a room object
+        """
+        self.current_location = new_location
 ROOM1 = Room("ROOM1", None, 'ROOM3', 'ROOM2', None, "This is room 1 and there's an exit to the South"
-                                                    " and East")
+                                                    " and East. There is a stone sword.", [StoneSword], [None])
 ROOM3 = Room("ROOM3", 'ROOM1', 'ROOM5', None, None, "This is room 3 and there's an exit to the South."
-                                                    " You can go back North")
+                                                    " You can go back North", [None], [None])
 ROOM5 = Room("ROOM5", 'ROOM3', 'ROOM9', 'ROOM7', None, "This is room 5 and there's an exit to the South."
-                                                       " There is also an exit to the East")
-ROOM9 = Room("ROOM9", 'ROOM5', 'ROOM10', 'ROOM8', None, "This is room 9 and there's an exit to the South and East.")
+                                                       " There is also an exit to the East", [HealthPotionLvl1], [None])
+ROOM9 = Room("ROOM9", 'ROOM5', 'ROOM10', 'ROOM8', None, "This is room 9 and there's an exit to the South and East.",
+                                                        [None], [None])
 ROOM10 = Room("ROOM10", 'ROOM9', None, 'ROOM11', None, " This is room 10 and there's an exit to the North and East.")
 ROOM2 = Room("ROOM2", None, 'ROOM7', None, 'ROOM1', "This is room 2 and there's an exit to the West and South.")
 ROOM7 = Room("ROOM2", 'ROOM2', 'ROOM8', None, 'ROOM 5', "This is room 7 and there's an exit to the North, West,"
@@ -184,25 +179,21 @@ ROOM11 = Room("ROOM11", 'ROOM12', None, None, 'ROOM10', "This is room 11 and the
 ROOM12 = Room("ROOM12", None, 'ROOM11', 'ROOM13', None, "This is room 12 and there's an exit to the East and South.")
 ROOM13 = Room("ROOM13", 'ROOM14', None, None, 'ROOM12', "This is room 13 and there's an exit to the North and West.")
 ROOM14 = Room("ROOM14", 'EXIT', None, 'ROOM13', 'None', "This is room 14 and there's an exit to the North and East.")
-EXIT = Room("EXIT ROOM", None, None, None, None, "CONGRATS YOU WIN!!")
+EXIT = Room("EXIT ROOM", None, None, None, None, "CONGRATS YOU WIN!!", [None], [None])
 
 # Players
-player = Player(ROOM1)
-
+player = Character("Jordan", 100, None, None, [], "ROOM1")
 playing = True
+
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
+
 
 # Items
 StoneSword = StoneSword("Stone Sword")
 IronSword = IronSword("Iron Sword")
 
-
 # Characters
-c1 = Character("Orc1", 100, StoneSword, None)
-c2 = Character("Orc2", 100, IronSword, None)
-c1.attack(c2)
-c2.attack(c1)
-player = Character("You", 100, SatansSword, None)
+EvilJordan = Character("You", 100, SatansSword, None, None, None)
 
 # Controller
 while playing:
