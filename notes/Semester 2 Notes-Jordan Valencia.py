@@ -1,5 +1,5 @@
 print("Hello World")
-#dawggofollowlol
+# dawggofollowlol
 
 cars = 5
 driving = True
@@ -10,7 +10,7 @@ print("I have" + str(cars) + "cars")
 age = input("how old are you?")
 print(age + "? My daughter is older than you.")
 
-list1 = ["red","blue","green","purple","black"]
+list1 = ["red", "blue", "green", "purple", "black"]
 print(list1)
 list1.append("pink")
 print(list1)
