@@ -188,11 +188,14 @@ EXIT = Room("EXIT ROOM", None, None, None, None, "CONGRATS YOU WIN!!", [], [])
 # Players
 player = Character("Jordan", 100, None, None, [], "ROOM1")
 playing = True
-if len(player.current_location.items) > 0:
-    print("There is a %s in this room" % player.current_location.items)
-if len(player.current_location.characters) > 0:
-    print("There is someone in this room")
+while playing:
+    if len(player.current_location.items) > 0:
+        print("There is an item in this room")
 
+    if len(player.current_location.characters) > 0:
+        print("There is someone in this room")
+
+pickup = input("Would you like to pick up this item?")
     def pick_up_item(self):
         self.inventory = None
         print("Your inventory is empty, make it full by getting items.")
