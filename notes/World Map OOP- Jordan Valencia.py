@@ -1,5 +1,7 @@
 class Room(object):
     def __init__(self, name, north=None, south=None, east=None, west=None, description="", items=None, characters=None):
+        if items is None:
+            items = []
         if characters is None:
             characters = []
         self.name = name
@@ -165,9 +167,13 @@ class Character(object):
         """
         self.current_location = new_location
 
+    def print_inventory(self):
+        for item in self.inventory:
+            print(item.name)
+
 
 ROOM1 = Room("ROOM1", None, 'ROOM3', 'ROOM2', None, "This is room 1 and there's an exit to the South"
-                                                    " and East. There is a stone sword.", [StoneSword], [None])
+                                                    " and East. There is a stone sword.", ['StoneSword'], [])
 ROOM3 = Room("ROOM3", 'ROOM1', 'ROOM5', None, None, "This is room 3 and there's an exit to the South."
                                                     " You can go back North", [], [])
 ROOM5 = Room("ROOM5", 'ROOM3', 'ROOM9', 'ROOM7', None, "This is room 5 and there's an exit to the South."
@@ -186,19 +192,25 @@ ROOM14 = Room("ROOM14", 'EXIT', None, 'ROOM13', 'None', "This is room 14 and the
 EXIT = Room("EXIT ROOM", None, None, None, None, "CONGRATS YOU WIN!!", [], [])
 
 # Players
-player = Character("Jordan", 100, None, None, [], "ROOM1")
+player = Character("Jordan", 100, None, None, [], ROOM1)
 playing = True
 while playing:
     if len(player.current_location.items) > 0:
-        print("There is an item in this room")
+        for item in player.current_location.items:
+            print("There is an item in this room")
 
     if len(player.current_location.characters) > 0:
         print("There is someone in this room")
 
-pickup = input("Would you like to pick up this item?")
-    def pick_up_item(self):
-        self.inventory = None
+    pickup = input("Would you like to pick up this item?")
+    if pickup == "yes":
+        player.inventory = player.inventory + player.current_location.items
+        player.print_inventory()
+
+@staticmethod
+def pick_up_item():
         print("Your inventory is empty, make it full by getting items.")
+
 
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
 
