@@ -177,7 +177,7 @@ ROOM1 = Room("ROOM1", None, 'ROOM3', 'ROOM2', None, "This is room 1 and there's 
 ROOM3 = Room("ROOM3", 'ROOM1', 'ROOM5', None, None, "This is room 3 and there's an exit to the South."
                                                     " You can go back North", [], [])
 ROOM5 = Room("ROOM5", 'ROOM3', 'ROOM9', 'ROOM7', None, "This is room 5 and there's an exit to the South."
-                                                       " There is also an exit to the East", [HealthPotionLvl1], [None])
+                                                       " There is also an exit to the East", ['HealthPotionLvl1'], [None])
 ROOM9 = Room("ROOM9", 'ROOM5', 'ROOM10', 'ROOM8', None, "This is room 9 and there's an exit to the South and East.",
                                                         [], [])
 ROOM10 = Room("ROOM10", 'ROOM9', None, 'ROOM11', None, " This is room 10 and there's an exit to the North and East.")
@@ -193,21 +193,8 @@ EXIT = Room("EXIT ROOM", None, None, None, None, "CONGRATS YOU WIN!!", [], [])
 
 # Players
 player = Character("Jordan", 100, None, None, [], ROOM1)
-playing = True
-while playing:
-    if len(player.current_location.items) > 0:
-        for item in player.current_location.items:
-            print("There is an item in this room")
 
-    if len(player.current_location.characters) > 0:
-        print("There is someone in this room")
 
-    pickup = input("Would you like to pick up this item?")
-    if pickup == "yes":
-        player.inventory = player.inventory + player.current_location.items
-        player.print_inventory()
-
-@staticmethod
 def pick_up_item():
         print("Your inventory is empty, make it full by getting items.")
 
@@ -223,9 +210,25 @@ IronSword = IronSword("Iron Sword")
 EvilJordan = Character("You", 100, SatansSword, None, None, None)
 
 # Controller
+playing = True
 while playing:
     print(player.current_location.name)
     print(player.current_location.description)
+
+    if len(player.current_location.items) > 0:
+        for item in player.current_location.items:
+            print("There is an item in this room")
+
+    if len(player.current_location.characters) > 0:
+        print("There is someone in this room")
+for item in player.current_location.items:
+    pickup = input("Would you like to pick up this item?")
+    if pickup == "yes":
+        player.inventory.append(item)
+        player.current_location.items.remove(item)
+        player.print_inventory()
+    else:
+        print("you can move on..")
     if player.current_location.name == ['EXIT']:
         print("YOU WIN!!!")
         quit(0)
