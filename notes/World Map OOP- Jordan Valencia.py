@@ -1,5 +1,5 @@
 class Room(object):
-    def __init__(self, name, north=None, south=None, east=None, west=None, description="", items=None, characters=None):
+    def __init__(self, name, north=None, south=None, east=None, west=None, description="", items=[], characters=[]):
         if items is None:
             items = []
         if characters is None:
@@ -173,23 +173,24 @@ class Character(object):
 
 
 ROOM1 = Room("ROOM1", None, 'ROOM3', 'ROOM2', None, "This is room 1 and there's an exit to the South"
-                                                    " and East. There is a stone sword.", ['StoneSword'], [])
+                                                    " and East. There is a stone sword.", [StoneSword(Sword)], [])
 ROOM3 = Room("ROOM3", 'ROOM1', 'ROOM5', None, None, "This is room 3 and there's an exit to the South."
-                                                    " You can go back North", ['Wooden Shield'], [])
+                                                    " You can go back North", [WoodenShield], [])
 ROOM5 = Room("ROOM5", 'ROOM3', 'ROOM9', 'ROOM7', None, "This is room 5 and there's an exit to the South."
-                                                       " There is also an exit to the East", ['HealthPotionLvl1'], [None])
+                                                       "There is also an exit to the East",
+                                                       [HealthPotionLvl1], [])
 ROOM9 = Room("ROOM9", 'ROOM5', 'ROOM10', 'ROOM8', None, "This is room 9 and there's an exit to the South and East.",
-                                                        ['Stone PickAxe'], [])
-ROOM10 = Room("ROOM10", 'ROOM9', None, 'ROOM11', None, " This is room 10 and there's an exit to the North and East.",
-              ['Stone Shovel'], [])
+                                                        [StonePickAxe], [])
+ROOM10 = Room("ROOM10", 'ROOM9', None, 'ROOM11', None, "This is room 10 and there's an exit to the North and East.",
+                                                       [StoneShovel], [])
 ROOM2 = Room("ROOM2", None, 'ROOM7', None, 'ROOM1', "This is room 2 and there's an exit to the West and South.",
              [], [])
 ROOM7 = Room("ROOM2", 'ROOM2', 'ROOM8', None, 'ROOM 5', "This is room 7 and there's an exit to the North, West,"
                                                         " and South", [], [])
 ROOM8 = Room("ROOM8", 'ROOM7', None, None, 'ROOM9', "This is room 8 and there's an exit to the West and North.",
-             ['Steel Shield'], [])
+                                                    [SteelShield], [])
 ROOM11 = Room("ROOM11", 'ROOM12', None, None, 'ROOM10', "This is room 11 and there's an exit to the North and West.",
-              ["Gold Sword"], [])
+                                                        [GoldSword], [])
 ROOM12 = Room("ROOM12", None, 'ROOM11', 'ROOM13', None, "This is room 12 and there's an exit to the East and South.",
               [], [])
 ROOM13 = Room("ROOM13", 'ROOM14', None, None, 'ROOM12', "This is room 13 and there's an exit to the North and West.",
@@ -212,7 +213,9 @@ StoneSword = StoneSword("Stone Sword")
 IronSword = IronSword("Iron Sword")
 
 # Characters
-EvilJordan = Character("You", 100, SatansSword, None, None, None)
+EvilJordan = Character("Evil Jordan", 100, SatansSword, None, None, None)
+WeeWee = Character("WeeWee", 100 )
+
 
 # Controller
 playing = True
@@ -231,6 +234,7 @@ while playing:
         if pickup == "yes":
             player.inventory.append(item)
             player.current_location.items.remove(item)
+            print(item)
             player.print_inventory()
         else:
             print("you can move on..")
