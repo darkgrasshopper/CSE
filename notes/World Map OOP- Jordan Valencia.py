@@ -173,14 +173,14 @@ class Character(object):
 
 
 ROOM1 = Room("ROOM1", None, 'ROOM3', 'ROOM2', None, "This is room 1 and there's an exit to the South"
-                                                    " and East. There is a stone sword.", [StoneSword(Sword)], [])
+                                                    " and East.", [StoneSword("Stone Sword")], [])
 ROOM3 = Room("ROOM3", 'ROOM1', 'ROOM5', None, None, "This is room 3 and there's an exit to the South."
-                                                    " You can go back North", [WoodenShield], [])
+                                                    " You can go back North", [WoodenShield("Wooden Shield")], [])
 ROOM5 = Room("ROOM5", 'ROOM3', 'ROOM9', 'ROOM7', None, "This is room 5 and there's an exit to the South."
                                                        "There is also an exit to the East",
-                                                       [HealthPotionLvl1], [])
+                                                       [HealthPotionLvl1("Health Potion Level 1")], [])
 ROOM9 = Room("ROOM9", 'ROOM5', 'ROOM10', 'ROOM8', None, "This is room 9 and there's an exit to the South and East.",
-                                                        [StonePickAxe], [])
+                                                        [StonePickAxe("Stone Pick Axe")], ["WeeWee"])
 ROOM10 = Room("ROOM10", 'ROOM9', None, 'ROOM11', None, "This is room 10 and there's an exit to the North and East.",
                                                        [StoneShovel], [])
 ROOM2 = Room("ROOM2", None, 'ROOM7', None, 'ROOM1', "This is room 2 and there's an exit to the West and South.",
@@ -209,12 +209,12 @@ directions = ['north', 'south', 'east', 'west', 'up', 'down']
 
 
 # Items
-StoneSword = StoneSword("Stone Sword")
-IronSword = IronSword("Iron Sword")
+StoneSword1 = StoneSword("Stone Sword")
+IronSword1 = IronSword("Iron Sword")
 
 # Characters
-EvilJordan = Character("Evil Jordan", 100, SatansSword, None, None, None)
-WeeWee = Character("WeeWee", 100 )
+EvilJordan = Character("Evil Jordan", 100, SatansSword("Satans Sword"), None, None, None)
+WeeWee = Character("WeeWee", 100, StoneSword("Stone Sword"), None, None, None)
 
 
 # Controller
@@ -225,7 +225,7 @@ while playing:
 
     if len(player.current_location.items) > 0:
         for item in player.current_location.items:
-            print("There is an item in this room")
+            print("There is an item in this room.")
 
     if len(player.current_location.characters) > 0:
         print("There is someone in this room")
@@ -234,7 +234,7 @@ while playing:
         if pickup == "yes":
             player.inventory.append(item)
             player.current_location.items.remove(item)
-            print(item)
+
             player.print_inventory()
         else:
             print("you can move on..")
