@@ -172,10 +172,23 @@ class Character(object):
             print(item.name)
 
 
+# Characters
+EvilJordan = Character("Evil Jordan", 90, SatansSword("Satans Sword"), None, None, None)
+WeeWee = Character("WeeWee", 15, StoneSword("Stone Sword"), None, None, None)
+WooWoo = Character("WooWoo", 20, GoldSword("Stone Sword"), None, None, None)
+Shrek = Character("Shrek", 80, IronSword("Iron Sword"), None, None, None)
+
+
+# Items
+StoneSword1 = StoneSword("Stone Sword")
+IronSword1 = IronSword("Iron Sword")
+GoldSword1 = GoldSword("Gold Sword")
+
+
 ROOM1 = Room("ROOM1", None, 'ROOM3', 'ROOM2', None, "This is room 1 and there's an exit to the South"
                                                     " and East.", [StoneSword("Stone Sword")], [])
 ROOM3 = Room("ROOM3", 'ROOM1', 'ROOM5', None, None, "This is room 3 and there's an exit to the South."
-                                                    " You can go back North", [WoodenShield("Wooden Shield")], [])
+                                                    " You can go back North", [WoodenShield("Wooden Shield")], [WeeWee])
 ROOM5 = Room("ROOM5", 'ROOM3', 'ROOM9', 'ROOM7', None, "This is room 5 and there's an exit to the South."
                                                        "There is also an exit to the East",
                                                        [HealthPotionLvl1("Health Potion Level 1")], [])
@@ -206,15 +219,6 @@ def pick_up_item():
 
 
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
-
-
-# Items
-StoneSword1 = StoneSword("Stone Sword")
-IronSword1 = IronSword("Iron Sword")
-
-# Characters
-EvilJordan = Character("Evil Jordan", 100, SatansSword("Satans Sword"), None, None, None)
-WeeWee = Character("WeeWee", 100, StoneSword("Stone Sword"), None, None, None)
 
 
 # Controller
