@@ -188,7 +188,8 @@ GoldSword1 = GoldSword("Gold Sword")
 ROOM1 = Room("ROOM1", None, 'ROOM3', 'ROOM2', None, "This is room 1 and there's an exit to the South"
                                                     " and East.", [StoneSword("Stone Sword")], [])
 ROOM3 = Room("ROOM3", 'ROOM1', 'ROOM5', None, None, "This is room 3 and there's an exit to the South."
-                                                    " You can go back North", [WoodenShield("Wooden Shield")], [WeeWee])
+                                                    " You can go back North", [WoodenShield("Wooden Shield")],
+                                                                              ["WeeWee"])
 ROOM5 = Room("ROOM5", 'ROOM3', 'ROOM9', 'ROOM7', None, "This is room 5 and there's an exit to the South."
                                                        "There is also an exit to the East",
                                                        [HealthPotionLvl1("Health Potion Level 1")], [])
@@ -219,7 +220,7 @@ def pick_up_item():
 
 
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
-
+short_directions = ['n', 's', 'e', 'w', 'u', 'd']
 
 # Controller
 playing = True
@@ -242,10 +243,15 @@ while playing:
             player.print_inventory()
         else:
             print("you can move on..")
+    command = input(">_")
+
+    if command.lower() in short_directions:
+        pos = short_directions.index(command.lower())
+        command = directions[pos]
     if player.current_location.name == ['EXIT']:
         print("YOU WIN!!!")
         quit(0)
-    command = input(">_")
+
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
     elif command.lower() in directions:
