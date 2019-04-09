@@ -183,7 +183,8 @@ Shrek = Character("Shrek", 80, IronSword("Iron Sword"), None, None, None)
 StoneSword1 = StoneSword("Stone Sword")
 IronSword1 = IronSword("Iron Sword")
 GoldSword1 = GoldSword("Gold Sword")
-
+WoodenShield1 = WoodenShield("Wooden Shield ")
+StoneShovel1 = StoneShovel("Stone Shovel")
 
 ROOM1 = Room("ROOM1", None, 'ROOM3', 'ROOM2', None, "This is room 1 and there's an exit to the South"
                                                     " and East.", [StoneSword("Stone Sword")], [])
@@ -196,19 +197,22 @@ ROOM5 = Room("ROOM5", 'ROOM3', 'ROOM9', 'ROOM7', None, "This is room 5 and there
 ROOM9 = Room("ROOM9", 'ROOM5', 'ROOM10', 'ROOM8', None, "This is room 9 and there's an exit to the South and East.",
                                                         [StonePickAxe("Stone Pick Axe")], ["WeeWee"])
 ROOM10 = Room("ROOM10", 'ROOM9', None, 'ROOM11', None, "This is room 10 and there's an exit to the North and East.",
-                                                       [StoneShovel], [])
+                                                       [StoneShovel("Stone Shovel")], [])
 ROOM2 = Room("ROOM2", None, 'ROOM7', None, 'ROOM1', "This is room 2 and there's an exit to the West and South.",
              [], [])
-ROOM7 = Room("ROOM2", 'ROOM2', 'ROOM8', None, 'ROOM 5', "This is room 7 and there's an exit to the North, West,"
+ROOM7 = Room("ROOM2", 'ROOM2', 'ROOM8', None, 'ROOM 5', "This is room 7 and there's an"
+                                                        "exit to the North, West,"
                                                         " and South", [], [])
 ROOM8 = Room("ROOM8", 'ROOM7', None, None, 'ROOM9', "This is room 8 and there's an exit to the West and North.",
-                                                    [SteelShield], [])
+                                                    [SteelShield("Steel Shield")], [])
 ROOM11 = Room("ROOM11", 'ROOM12', None, None, 'ROOM10', "This is room 11 and there's an exit to the North and West.",
-                                                        [GoldSword], [])
+                                                        [GoldSword("Gold Sword")], [])
 ROOM12 = Room("ROOM12", None, 'ROOM11', 'ROOM13', None, "This is room 12 and there's an exit to the East and South.",
               [], [])
 ROOM13 = Room("ROOM13", 'ROOM14', None, None, 'ROOM12', "This is room 13 and there's an exit to the North and West.",
               [], [])
+
+ROOM14 = Room("ROOM14", )
 EXIT = Room("EXIT ROOM", None, None, None, None, "CONGRATS YOU WIN!!", [], [])
 
 # Players
@@ -239,7 +243,6 @@ while playing:
         if pickup == "yes":
             player.inventory.append(item)
             player.current_location.items.remove(item)
-
             player.print_inventory()
         else:
             print("you can move on..")
