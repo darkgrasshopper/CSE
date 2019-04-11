@@ -186,11 +186,22 @@ GoldSword1 = GoldSword("Gold Sword")
 WoodenShield1 = WoodenShield("Wooden Shield ")
 StoneShovel1 = StoneShovel("Stone Shovel")
 
-ROOM1 = Room("ROOM1", None, 'ROOM3', 'ROOM2', None, "This is room 1 and there's an exit to the South"
-                                                    " and East.", [StoneSword("Stone Sword")], [])
-ROOM3 = Room("ROOM3", 'ROOM1', 'ROOM5', None, None, "This is room 3 and there's an exit to the South."
-                                                    " You can go back North", [WoodenShield("Wooden Shield")],
-                                                                              ["WeeWee"])
+ROOM1 = Room("ROOM1", None, 'ROOM3', 'ROOM2', None, " Welcome, hope you enjoy this game.\n"
+                                                    " In this game you can pick up. items by simply saying 'yes'"
+                                                    " to when the game asks if you would"
+                                                    " want to pick up the item.\n"
+                                                    " To move, just type 'n' for north, 's'"
+                                                    " for south, 'e' for east, 'w' for west, 'u' for going up"
+                                                    " something and 'd' to go down something.\n Anyways now you know"
+                                                    " what to do"
+                                                    " enjoy........\n This is room 1 and there's"
+                                                    " an exit to the South and East.",
+                                                    [StoneSword("Stone Sword")], [])
+ROOM3 = Room("ROOM3", 'ROOM1', 'ROOM5', None, None, "You're currently in Room 3, and you have picked up your"
+                                                    " first item. Nice Job! go ahead pick this shield up. "
+                                                    "and by the way there's an exit to the South."
+                                                    " Or you can go back North.", [WoodenShield("Wooden Shield")],
+                                                                                  ["WeeWee"])
 ROOM5 = Room("ROOM5", 'ROOM3', 'ROOM9', 'ROOM7', None, "This is room 5 and there's an exit to the South."
                                                        "There is also an exit to the East",
                                                        [HealthPotionLvl1("Health Potion Level 1")], [])
