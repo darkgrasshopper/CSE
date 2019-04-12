@@ -194,8 +194,12 @@ ROOM1 = Room("ROOM1", None, 'ROOM3', 'ROOM2', None, " Welcome, hope you enjoy th
                                                     " for south, 'e' for east, 'w' for west, 'u' for going up"
                                                     " something and 'd' to go down something.\n Anyways now you know"
                                                     " what to do"
-                                                    " enjoy........\n This is room 1 and there's"
-                                                    " an exit to the South and East.",
+                                                    " enjoy........\n"
+                                                    "★・・・・・・★・・・・・・★・・・・・・★\n"
+                                                    "This is room 1, you have no idea where you are.\n"
+                                                    "It's very dark but you can see light coming from two places, "
+                                                    "to what seems to be your south and east. "
+                                                    "Where shall you go?",
                                                     [StoneSword("Stone Sword")], [])
 ROOM3 = Room("ROOM3", 'ROOM1', 'ROOM5', None, None, "You're currently in Room 3, and you have picked up your"
                                                     " first item. Nice Job! go ahead pick this shield up. "
