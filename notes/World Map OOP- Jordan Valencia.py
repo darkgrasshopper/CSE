@@ -187,9 +187,10 @@ WoodenShield1 = WoodenShield("Wooden Shield ")
 StoneShovel1 = StoneShovel("Stone Shovel")
 
 ROOM1 = Room("ROOM1", None, 'ROOM3', 'ROOM2', None, " Welcome, hope you enjoy this game.\n"
-                                                    " In this game you can pick up. items by simply saying 'yes'"
+                                                    " In this game you can pick up items by simply saying 'yes'"
                                                     " to when the game asks if you would"
-                                                    " want to pick up the item.\n"
+                                                    " want to pick up the item.\n or you can say 'no' if you do not"
+                                                    " want to pick the item up\n"
                                                     " To move, just type 'n' for north, 's'"
                                                     " for south, 'e' for east, 'w' for west, 'u' for going up"
                                                     " something and 'd' to go down something.\n Anyways now you know"
@@ -202,7 +203,7 @@ ROOM1 = Room("ROOM1", None, 'ROOM3', 'ROOM2', None, " Welcome, hope you enjoy th
                                                     "Where shall you go?",
                                                     [StoneSword("Stone Sword")], [])
 ROOM3 = Room("ROOM3", 'ROOM1', 'ROOM5', None, None, "You're currently in Room 3, and you have picked up your"
-                                                    " first item. Nice Job! go ahead pick this shield up. "
+                                                    " first item. Nice Job!\nGo ahead pick this shield up too. "
                                                     "and by the way there's an exit to the South."
                                                     " Or you can go back North.", [WoodenShield("Wooden Shield")],
                                                                                   ["WeeWee"])
@@ -213,10 +214,11 @@ ROOM9 = Room("ROOM9", 'ROOM5', 'ROOM10', 'ROOM8', None, "This is room 9 and ther
                                                         [StonePickAxe("Stone Pick Axe")], ["WeeWee"])
 ROOM10 = Room("ROOM10", 'ROOM9', None, 'ROOM11', None, "This is room 10 and there's an exit to the North and East.",
                                                        [StoneShovel("Stone Shovel")], [])
-ROOM2 = Room("ROOM2", None, 'ROOM7', None, 'ROOM1', "This is room 2 and there's an exit to the West and South.",
-             [], [])
-ROOM7 = Room("ROOM2", 'ROOM2', 'ROOM8', None, 'ROOM 5', "This is room 7 and there's an"
-                                                        "exit to the North, West,"
+ROOM2 = Room("ROOM2", None, 'ROOM7', None, 'ROOM1', "This is room 2 and you have picked up your fist item. Nice Job!\n"
+                                                    "Go ahead pick up this iron sword up too. There's an exit to the"
+                                                    " West and South.", [IronSword("Iron Sword")], [])
+ROOM7 = Room("ROOM7", 'ROOM2', 'ROOM8', None, 'ROOM 5', "This is room 7 and there's an"
+                                                        " exit to the North, West,"
                                                         " and South", [], [])
 ROOM8 = Room("ROOM8", 'ROOM7', None, None, 'ROOM9', "This is room 8 and there's an exit to the West and North.",
                                                     [SteelShield("Steel Shield")], [])
@@ -227,7 +229,8 @@ ROOM12 = Room("ROOM12", None, 'ROOM11', 'ROOM13', None, "This is room 12 and the
 ROOM13 = Room("ROOM13", 'ROOM14', None, None, 'ROOM12', "This is room 13 and there's an exit to the North and West.",
               [], [])
 
-ROOM14 = Room("ROOM14", )
+ROOM14 = Room("ROOM14", 'EXIT', 'ROOM13', None, None, "There seems to be an exit to the north! it seems like that's the"
+                                                      "exit, hurry up go!", [], [])
 EXIT = Room("EXIT ROOM", None, None, None, None, "CONGRATS YOU WIN!!", [], [])
 
 # Players
