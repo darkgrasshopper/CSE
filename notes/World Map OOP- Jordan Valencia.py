@@ -238,7 +238,7 @@ player = Character("Jordan", 100, None, None, [], ROOM1)
 
 
 def pick_up_item():
-        print("Your inventory is empty, make it full by getting items.")
+    print("Your inventory is empty, make it full by getting items.")
 
 
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
