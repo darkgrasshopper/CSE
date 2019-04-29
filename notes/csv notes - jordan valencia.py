@@ -1,18 +1,45 @@
 import csv
 
 
-def validate(num: str):
+def first_num_is_four(num: str):
     first_num = int(num[0])
     if first_num == 4:
         return True
     return False
 
 
+def first_num_odd(num: str):
+    first_num = int(num[0])
+    if first_num % 2 == 1:
+        return True
+    return False
+
+
+def second_num_even(num: str):
+    second_num = int(num[1])
+    if second_num % 2 == 0:
+        return True
+    return False
+
+
+def validate(num: str):
+    if first_num_odd(num) and second_num_even(num):
+        return True
+    return False
+
+
+def reverse(num: str):
+    print(num)
+    print(num[::-1])
+
+
+reverse("4712839550684070")
 # with open("Book.csv", 'r') as old_csv
 #     reader = csv.reader(old_csv)
 #     for row in reader:
 #         old_number = int(row[0])+ 1
 #         print(old_number)
+
 
 with open("Book1.csv", 'r') as old_csv:
     with open("MyNewFile.csv", 'w', newline='') as new_csv:
@@ -33,5 +60,7 @@ with open("Book1.csv", 'r') as old_csv:
                 writer.writerow(row)
     print("OK")
 # first number odd and second even
-
-        for row in reader
+#     for row in reader:
+#         old_number = row[0]
+#         first_num = int(old_number[0])
+#         if first_num % 2 == 1:
