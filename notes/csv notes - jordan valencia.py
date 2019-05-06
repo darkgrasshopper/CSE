@@ -60,7 +60,7 @@ with open("Book1.csv", 'r') as old_csv:
                 writer.writerow(row)
     print("OK")
 # first number odd and second even
-#     for row in reader:
-#         old_number = row[0]
-#         first_num = int(old_number[0])
-#         if first_num % 2 == 1:
+# for row in reader:
+# old_number = row[0]
+# first_num = int(old_number[0])
+# if first_num % 2 == 1:
